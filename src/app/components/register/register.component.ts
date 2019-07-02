@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.sass']
+  styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
 

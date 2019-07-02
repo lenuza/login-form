@@ -1,4 +1,33 @@
 <div id="wrapper">
+  <h2>Log in</h2>
+  <!-- <form  [formGroup]="loginForm" (ngSubmit)="onSubmit()" id="login-form" class="login-form" autocomplete="off"> -->
+  <form>
+    <label for="username">Username</label>
+    <input id="username" #username formControlName="username" name="username" type="text" placeholder="Enter username" required/>
+    <!-- error message if username is not provided -->
+    <!-- <div id="required" *ngIf="loginForm.controls['username'].invalid && (loginForm.controls['username'].dirty ||
+      loginForm.controls['username'].touched)">
+      <div *ngIf="loginForm.controls['username'].errors.required">
+        *Username is required.
+      </div>
+    </div> -->
 
+    <label for="password">Password</label>
+    <input id="password" #password formControlName="password" name="password" type="text" placeholder="Enter password" />
+    <!-- error message if username is not provided -->
+    <!-- <div id="required" *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty ||
+      loginForm.controls['password'].touched)">
+      <div *ngIf="loginForm.controls['password'].errors.required">
+        *Password is required.
+      </div>
+    </div> -->
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+
+<p>
+  <a routerLink="/register" aria-label="register form">Register</a>
+  <a routerLink="forgot-password" aria-label="forgot password">Forgot password</a>
+  </p>
 
 </div>
