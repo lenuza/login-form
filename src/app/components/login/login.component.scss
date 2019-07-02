@@ -40,16 +40,17 @@
 
   p {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
     margin-top: 10px;
-    font-size: 1em;
+    font-weight: 400;
 
     a {
-      color: #3490dc;
+      color: #2a8c70;
       text-decoration: none;
 
       &:hover {
-        color: #2255cc;
+        color: #0a382a;
       }
     }
   }
